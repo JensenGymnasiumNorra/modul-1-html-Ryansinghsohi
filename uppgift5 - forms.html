@@ -27,15 +27,28 @@ Se till att när man klickar på submit-knappen i formuläret så ska tack.html 
 </head>
 
 <body>
-    <form action="">   
+    <form action="tack.html" method="get">   
         <fieldset style="border: 2px solid black; padding: 10px; margin-bottom: 10px;">
+            <legend>New login</legend>
             <label for="username">Username: </label>
-            <input type="text" id="username" name="username" value="Ryan">
+            <input type="text" id="username"  value="">
             <br>
             <label for="password">Password: </label>
-            <input type="text" id="password" name="password" value="">
+            <input type="password" id="password"  value="">
+            <br>
         </fieldset> 
-        
+
+        <fieldset style="border: 2px solid black; padding: 10px; margin-bottom: 10px;">
+            <legend>Preferences</legend>
+            <input type="radio" id="remember"  value="yes">
+            <label for="remember">Remember me</label>
+            <br>
+            <input type="checkbox" id="tos" value="yes"> 
+            <label for="tos">accept terms of servace</label>
+            <br>
+        </fieldset>
+        <input type="submit" value="Submit">
+
     </form>
 </body>
 
