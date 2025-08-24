@@ -31,7 +31,7 @@ Se till att när man klickar på submit-knappen i formuläret så ska tack.html 
         <fieldset style="border: 2px solid black; padding: 10px; margin-bottom: 10px;">
             <legend>New login</legend>
             <label for="username">Username: </label>
-            <input type="text" id="username"  value="">
+            <input type="text" id="username"  value="username">
             <br>
             <label for="password">Password: </label>
             <input type="password" id="password"  value="">
@@ -40,6 +40,14 @@ Se till att när man klickar på submit-knappen i formuläret så ska tack.html 
 
         <fieldset style="border: 2px solid black; padding: 10px; margin-bottom: 10px;">
             <legend>Preferences</legend>
+            <label for="land">Country:</label>
+            <select id="land">
+                <option value="sweden">Sweden</option>
+                <option value="norway">Norway</option>
+                <option value="denmark">Denmark</option>
+                <option value="finland">Finland</option>
+            </select>
+            <br>
             <input type="radio" id="remember"  value="yes">
             <label for="remember">Remember me</label>
             <br>
